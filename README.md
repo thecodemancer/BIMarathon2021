@@ -1,11 +1,10 @@
-s#
 # Spotify Data Analysis
 
 ## Project mission and goal
 
 As the years go by, tastes and fashions keep changing, in addition to new musical genres being created. The dataset is based on the reproductions in the Spotify app
 
-## Goal:
+## Goal
 
 Analyze the most popular songs and genres on the Spotify through release year and by the following cutoffs: duration, explicit content, artist, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, time signature, genre
 
@@ -161,6 +160,7 @@ artist 57
 artist 58
 
 ### Facts
+
 Artist followers
 
 ### Metrics to analyze
