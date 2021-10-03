@@ -1,5 +1,9 @@
 # Spotify Data Analysis
 
+<p align="center" style="background-color:rgb(41, 65, 171); ">
+  <img src="images/spotify_cover.jpg?raw=true?raw=true" style="width:100%">
+</p>
+
 ## Project mission and goal
 
 As the years go by, tastes and fashions keep changing, in addition to new musical genres being created. The dataset is based on the reproductions in the Spotify app
