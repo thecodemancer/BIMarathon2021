@@ -26,7 +26,7 @@ DIM_TIME
 
 ### Facts
 
-FACT_TABLE
+FACT_SPOTIFY
 
 ### Metrics to analyze
 
