@@ -49,20 +49,22 @@ Analyze the most popular songs and genres on the Spotify through release year an
 
 ### Dimensions:
 
-DIM_SONG
-
-DIM_ARTIST
-
-DIM_GENRE
+* DIM_SONG
+* DIM_ARTIST
+* DIM_GENRE
+* DIM_KEY
+* DIM_MODE
+* DIM_TIME_SIGNATURE
+* DIM_EXPLICIT
 
 ### Facts
 
-FACT_SPOTIFY
+* FACT_SPOTIFY
 
 ### Metrics to analyze
 
-Will be analizing genre's popularity based on songs and number of followers by each artist
-Will be analizing song's popularity its relation with the artist's popularity
+* Will be analizing genre's popularity based on songs and number of followers by each artist
+* Will be analizing song's popularity its relation with the artist's popularity
 
 
 
