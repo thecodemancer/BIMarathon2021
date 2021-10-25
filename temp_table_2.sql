@@ -3,7 +3,7 @@ INSERT INTO temp_table_2
 	id_track
 	,name
 	,popularity
-	,duration_ms
+	,duration_min
 	,explicit
 	,artists
 	,id_artists
@@ -89,12 +89,15 @@ SELECT
 	id_track
 	,CONVERT(CAST(CONVERT(name USING latin1) AS BINARY) USING utf8) AS name
 	,popularity
-	,duration_ms
+	,duration_ms/1000/60 AS duration_min
 	,explicit
 	,CONVERT(CAST(CONVERT(artists USING latin1) AS BINARY) USING utf8) AS artists
 	,id_artists
 	,release_date
-	,CASE WHEN release_year = '#VALUE!' THEN -1 END AS release_year
+	,CASE 
+	WHEN release_year = '#VALUE!' THEN -1 
+	ELSE release_year
+	END AS release_year
 	,danceability
 	,energy
 	,_key
