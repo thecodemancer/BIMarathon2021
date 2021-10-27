@@ -68,9 +68,16 @@ Analyze the most popular songs and genres on the Spotify through release year an
 
 ### ETL Process
 
-First, because the dataset has characters of different types such as Chinese, Cyrillic, Hebrew, etc. We convert the columns name, artists, artist 1, artist 2, ... into a utf-8 encoded version of the string. The process is described in /ETL/load_file.ipynb
+First, because the dataset has characters of different types such as Chinese, Cyrillic, Hebrew, etc. We convert the columns name, artists, artist 1, artist 2, ... into a utf-8 encoded version of the string. The process is described in */ETL/load_file.ipynb*
 
 ### ELT Process
 
+In the database, we have the following staging tables
 
+temp_table
+temp_table_2
+tamp_table_3
+tamp_table_4
+
+Which must be populated one after the other. Sequentially. The details of the transformations can be seen in */ELT/temp_table_2.sql*, */ELT/temp_table_3.sql*, and */ELT/temp_table_4.sql*
 
