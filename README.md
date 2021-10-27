@@ -66,6 +66,11 @@ Analyze the most popular songs and genres on the Spotify through release year an
 * Will be analizing genre's popularity based on songs and number of followers by each artist
 * Will be analizing song's popularity its relation with the artist's popularity
 
+### ETL Process
+
+First, because the dataset has characters of different types such as Chinese, Cyrillic, Hebrew, etc. We convert the columns name, artists, artist 1, artist 2, ... into a utf-8 encoded version of the string. The process is described in /ETL/load_file.ipynb
+
+### ELT Process
 
 
 
