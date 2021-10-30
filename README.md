@@ -53,7 +53,7 @@ End user of the app.
 
 ### Dimensions:
 
-* DIM_SONG
+* D_SONG
 * D_KEY
 * D_EXPLICIT
 * D_MODE
