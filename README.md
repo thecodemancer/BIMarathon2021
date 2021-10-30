@@ -51,11 +51,6 @@ End user of the app.
 
 ## Data Model (dimensions and facts)
 
-See the details in:
-
-1. Data Modeling/Spotify - Logical Data Model.png
-2. Data Modeling/Spotify - Physical Data Model.png
-
 ### Dimensions:
 
 * D_SONG
@@ -76,6 +71,11 @@ See the details in:
 
 * Will be analizing genre's popularity based on songs and number of followers by each artist
 * Will be analizing song's popularity its relation with the artist's popularity
+
+<p align="center" style="background-color:rgb(41, 65, 171); ">
+  <img src="Resources/images/spotify_cover.jpg?raw=true?raw=true" style="width:100%">
+</p>
+
 
 ## About the Processes
 
