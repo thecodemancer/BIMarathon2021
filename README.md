@@ -49,7 +49,7 @@ End user of the app.
 * What is the most popular song by genre
 * What is the least popular song by genre
 
-## Data Model (dimensions and facts)
+## 🚀 Data Model (dimensions and facts)
 
 ### Dimensions:
 
@@ -67,7 +67,7 @@ End user of the app.
 
 * FACT_SPOTIFY
 
-### Metrics to analyze
+### 📊 Metrics to analyze
 
 * Will be analizing genre's popularity based on songs and number of followers by each artist
 * Will be analizing song's popularity its relation with the artist's popularity
@@ -79,15 +79,15 @@ End user of the app.
   <img src="Data Modeling/Spotify-Physical Data Model.png?raw=true?raw=true" style="width:100%">
 </p>
 
-## About the Processes
+## 🧰 About the Processes
 
 We run a Python script and then with the data loaded in the database we run some transformation queries.
 
-### ETL Process
+### 🛠 ETL Process
 
 First, because the dataset has characters of different types such as Chinese, Cyrillic, Hebrew, etc. We convert the columns name, artists, artist 1, artist 2, ... into a utf-8 encoded version of the string. The process is described in */ETL/load_file.ipynb*
 
-### ELT Process
+### 🛠 ELT Process
 
 In the database, we have the following staging tables
 
