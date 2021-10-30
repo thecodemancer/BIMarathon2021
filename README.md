@@ -98,7 +98,7 @@ tamp_table_4
 
 Which must be populated one after the other. Sequentially. The details of the transformations can be seen in */ELT/temp_table_2.sql*, */ELT/temp_table_3.sql*, and */ELT/temp_table_4.sql*
 
-### 📊 Data Visualization
+## 📊 Data Visualization
 
 Coming soon!
 
