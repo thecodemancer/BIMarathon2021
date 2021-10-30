@@ -67,7 +67,7 @@ End user of the app.
 
 * FACT_SPOTIFY
 
-### 📊 Metrics to analyze
+### Metrics to analyze
 
 * Will be analizing genre's popularity based on songs and number of followers by each artist
 * Will be analizing song's popularity its relation with the artist's popularity
@@ -98,3 +98,8 @@ tamp_table_4
 
 Which must be populated one after the other. Sequentially. The details of the transformations can be seen in */ELT/temp_table_2.sql*, */ELT/temp_table_3.sql*, and */ELT/temp_table_4.sql*
 
+### 📊 Data Visualization
+
+Coming soon!
+
+If you've reach to this part, thank you!
