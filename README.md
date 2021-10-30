@@ -1,7 +1,7 @@
 # 🎧 Spotify Data Analysis
 
 <p align="center" style="background-color:rgb(41, 65, 171); ">
-  <img src="images/spotify_cover.jpg?raw=true?raw=true" style="width:100%">
+  <img src="resources/images/spotify_cover.jpg?raw=true?raw=true" style="width:100%">
 </p>
 
 ## Project mission and goal
