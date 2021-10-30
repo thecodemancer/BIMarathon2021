@@ -12,6 +12,10 @@ As the years go by, tastes and fashions keep changing, in addition to new musica
 
 Analyze the most popular songs and genres on the Spotify through release year and by the following cutoffs: duration, explicit content, artist, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, time signature, genre
 
+## Who is this project for?
+
+End user of the app.
+
 ## Business Questions
 
 * What is the least popular song?
@@ -50,12 +54,14 @@ Analyze the most popular songs and genres on the Spotify through release year an
 ### Dimensions:
 
 * DIM_SONG
-* DIM_ARTIST
-* DIM_GENRE
-* DIM_KEY
-* DIM_MODE
-* DIM_TIME_SIGNATURE
-* DIM_EXPLICIT
+* D_KEY
+* D_EXPLICIT
+* D_MODE
+* D_ARTIST
+* D_POPULARITY
+* D_GENRE
+* D_TIME_SIGNATURE
+* D_YEAR
 
 ### Facts
 
