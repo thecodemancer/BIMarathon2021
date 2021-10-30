@@ -1,4 +1,4 @@
-# Spotify Data Analysis
+# 🎧 Spotify Data Analysis
 
 <p align="center" style="background-color:rgb(41, 65, 171); ">
   <img src="images/spotify_cover.jpg?raw=true?raw=true" style="width:100%">
@@ -8,15 +8,15 @@
 
 As the years go by, tastes and fashions keep changing, in addition to new musical genres being created. The dataset is based on the reproductions in the Spotify app
 
-## Goal
+## 🎯 Goal
 
 Analyze the most popular songs and genres on the Spotify through release year and by the following cutoffs: duration, explicit content, artist, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, time signature, genre
 
-## Who is this project for?
+## 😀 Who is this project for?
 
 End user of the app.
 
-## Business Questions
+## 🏭 Business Questions
 
 * What is the least popular song?
 * What is the most popular song?
@@ -49,7 +49,12 @@ End user of the app.
 * What is the most popular song by genre
 * What is the least popular song by genre
 
-## Project attributes (dimensions and facts)
+## Data Model (dimensions and facts)
+
+See the details in:
+
+1. Data Modeling/Spotify - Logical Data Model.png
+2. Data Modeling/Spotify - Physical Data Model.png
 
 ### Dimensions:
 
