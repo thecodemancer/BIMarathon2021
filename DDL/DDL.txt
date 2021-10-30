@@ -1,0 +1,257 @@
+CREATE TABLE temp_table_2(
+    id_track VARCHAR(255)
+    ,name TEXT
+    ,popularity INTEGER
+    ,duration_min DOUBLE
+    ,explicit INTEGER
+    ,artists TEXT   
+    ,id_artists TEXT
+    ,release_date VARCHAR(10) 
+    ,release_year INTEGER   
+    ,danceability DOUBLE
+    ,energy DOUBLE  
+    ,_key INTEGER
+    ,loudness DOUBLE
+    ,mode INTEGER
+    ,speechiness DOUBLE
+    ,acousticness DOUBLE
+    ,instrumentalness DOUBLE
+    ,liveness DOUBLE
+    ,valence DOUBLE 
+    ,tempo DOUBLE
+    ,time_signature INTEGER
+    ,artist_id_1 VARCHAR(255)
+    ,artist_id_1_followers INTEGER
+    ,artist_id_1_genres VARCHAR(500)
+    ,artist_id_1_popularity INTEGER
+    ,artist_id_2 VARCHAR(255)
+    ,artist_id_2_followers INTEGER
+    ,artist_id_2_genres VARCHAR(255)
+    ,artist_id_2_popularity INTEGER
+    ,artist_id_3 VARCHAR(255)
+    ,artist_id_3_followers INTEGER
+    ,artist_id_3_genres VARCHAR(255)
+    ,artist_id_3_popularity INTEGER
+    ,artist_id_4 VARCHAR(255)
+    ,artist_id_5 VARCHAR(255)
+    ,artist_id_6 VARCHAR(255)
+    ,artist_id_7 VARCHAR(255)
+    ,artist_id_8 VARCHAR(255)
+    ,artist_id_9 VARCHAR(255)
+    ,artist_id_10 VARCHAR(255)
+    ,artist_id_11 VARCHAR(255)
+    ,artist_id_12 VARCHAR(255)
+    ,artist_id_13 VARCHAR(255)
+    ,artist_id_14 VARCHAR(255)
+    ,artist_id_15 VARCHAR(255)
+    ,artist_id_16 VARCHAR(255)
+    ,artist_id_17 VARCHAR(255)
+    ,artist_id_18 VARCHAR(255)
+    ,artist_id_19 VARCHAR(255)
+    ,artist_id_20 VARCHAR(255)
+    ,artist_id_21 VARCHAR(255)
+    ,artist_id_22 VARCHAR(255)
+    ,artist_id_23 VARCHAR(255)
+    ,artist_id_24 VARCHAR(255)
+    ,artist_id_25 VARCHAR(255)
+    ,artist_id_26 VARCHAR(255)
+    ,artist_id_27 VARCHAR(255)
+    ,artist_1 VARCHAR(255)
+    ,artist_2 VARCHAR(255)
+    ,artist_3 VARCHAR(255)
+    ,artist_4 VARCHAR(255)
+    ,artist_5 VARCHAR(255)
+    ,artist_6 VARCHAR(255)
+    ,artist_7 VARCHAR(255)
+    ,artist_8 VARCHAR(255)
+    ,artist_9 VARCHAR(255)
+    ,artist_10 VARCHAR(255)
+    ,artist_11 VARCHAR(255)
+    ,artist_12 VARCHAR(255)
+    ,artist_13 VARCHAR(255)
+    ,artist_14 VARCHAR(255)
+    ,artist_15 VARCHAR(255)
+    ,artist_16 VARCHAR(255)
+    ,artist_17 VARCHAR(255)
+    ,artist_18 VARCHAR(255)
+    ,artist_19 VARCHAR(255)
+    ,artist_20 VARCHAR(255)
+    ,artist_21 VARCHAR(255)
+    ,artist_22 VARCHAR(255)
+    ,artist_23 VARCHAR(255)
+    ,artist_24 VARCHAR(255)
+    ,artist_25 VARCHAR(255)
+    ,artist_26 VARCHAR(255)
+    ,artist_27 VARCHAR(255)
+    ,INDEX functional( (CHAR_LENGTH(artist_id_1_genres)),(CHAR_LENGTH(REPLACE(artist_id_1_genres, ',', '')) + 1) )
+    ,INDEX functional_index_2( (CHAR_LENGTH(artist_id_2_genres)),(CHAR_LENGTH(REPLACE(artist_id_2_genres, ',', '')) + 1) )
+    ,INDEX functional_index_3( (CHAR_LENGTH(artist_id_3_genres)),(CHAR_LENGTH(REPLACE(artist_id_3_genres, ',', '')) + 1) )
+);
+
+
+CREATE TABLE temp_table_3(
+    id_track VARCHAR(255)
+    ,name TEXT
+    ,popularity INTEGER
+    ,duration_min DOUBLE
+    ,explicit INTEGER
+    ,artists TEXT   
+    ,id_artists TEXT
+    ,release_date VARCHAR(10) 
+    ,release_year INTEGER   
+    ,calculated_release_year INTEGER
+    ,danceability DOUBLE
+    ,energy DOUBLE  
+    ,_key INTEGER
+    ,loudness DOUBLE
+    ,mode INTEGER
+    ,speechiness DOUBLE
+    ,acousticness DOUBLE
+    ,instrumentalness DOUBLE
+    ,liveness DOUBLE
+    ,valence DOUBLE 
+    ,tempo DOUBLE
+    ,time_signature INTEGER
+
+    ,artist_id VARCHAR(255)
+    ,artist_name VARCHAR(255)
+    ,artist_followers INTEGER
+    ,artist_genres VARCHAR(500)
+    ,artist_popularity INTEGER
+
+    ,INDEX functional( (CHAR_LENGTH(artist_genres)),(CHAR_LENGTH(REPLACE(artist_genres, ',', '')) + 1) )
+);
+
+CREATE TABLE temp_table_4(
+    id_track VARCHAR(255)
+    ,name TEXT
+    ,popularity INTEGER
+    ,duration_min DOUBLE
+    ,explicit INTEGER
+    ,artists TEXT   
+    ,id_artists TEXT
+    ,release_date VARCHAR(10) 
+    ,release_year INTEGER   
+    ,calculated_release_year INTEGER
+    ,danceability DOUBLE
+    ,energy DOUBLE  
+    ,_key INTEGER
+    ,loudness DOUBLE
+    ,mode INTEGER
+    ,speechiness DOUBLE
+    ,acousticness DOUBLE
+    ,instrumentalness DOUBLE
+    ,liveness DOUBLE
+    ,valence DOUBLE 
+    ,tempo DOUBLE
+    ,time_signature INTEGER
+
+    ,artist_id VARCHAR(255)
+    ,artist_name VARCHAR(255)
+    ,artist_followers INTEGER
+    ,artist_genres VARCHAR(500)
+    ,artist_genre VARCHAR(500)
+    ,artist_popularity INTEGER
+
+    ,INDEX (id_track)
+    ,INDEX(explicit)
+    ,INDEX (calculated_release_year)
+    ,INDEX (_key)
+    ,INDEX (mode)
+    ,INDEX (time_signature)
+    ,INDEX (artist_name)
+    ,INDEX (artist_genre)
+    ,INDEX (artist_popularity)
+);
+
+
+
+
+CREATE TABLE D_KEY(
+    key_id INTEGER NOT NULL
+    ,key_description VARCHAR(255)
+    ,PRIMARY KEY(key_id)
+); 
+
+CREATE TABLE D_EXPLICIT(
+    explicit_id INTEGER NOT NULL
+    ,explicit_description VARCHAR(255)
+    ,PRIMARY KEY(explicit_id)
+); 
+
+CREATE TABLE D_MODE(
+    mode_id INTEGER NOT NULL
+    ,mode_description VARCHAR(255)
+    ,PRIMARY KEY(mode_id)
+); 
+
+CREATE TABLE D_POPULARITY(
+    popularity_id INTEGER NOT NULL AUTO_INCREMENT
+    ,popularity_type INTEGER
+    ,popularity_score INTEGER
+    ,PRIMARY KEY(popularity_id)
+); 
+
+
+
+CREATE TABLE D_ARTIST(
+    artist_id INTEGER NOT NULL AUTO_INCREMENT
+    ,original_artist_id VARCHAR(255)
+    ,artist_name VARCHAR(255)
+    ,artist_followers INTEGER
+    ,PRIMARY KEY(artist_id)
+); 
+
+CREATE TABLE D_GENRE(
+    genre_id INTEGER NOT NULL AUTO_INCREMENT
+    ,genre_description VARCHAR(255)
+    ,PRIMARY KEY(genre_id)
+) ;
+
+CREATE TABLE D_TIME_SIGNATURE(
+    time_signature_id INTEGER NOT NULL
+    ,time_signature_description VARCHAR(255)
+    ,PRIMARY KEY(time_signature_id)
+); 
+
+CREATE TABLE D_YEAR(
+    year_id INTEGER NOT NULL AUTO_INCREMENT
+    ,year_description INTEGER
+    ,PRIMARY KEY(year_id)
+); 
+
+CREATE TABLE D_SONG(
+    song_id INTEGER NOT NULL AUTO_INCREMENT
+    ,id_track VARCHAR(255)
+    ,song_name TEXT
+    ,song_duration INTEGER
+    ,song_release_date VARCHAR(255)
+    ,song_release_year VARCHAR(255)
+    ,song_calculated_release_year INTEGER
+    ,song_danceability DOUBLE
+    ,song_energy DOUBLE
+    ,song_loudness DOUBLE
+    ,song_speechiness DOUBLE
+    ,song_acousticness DOUBLE
+    ,song_instrumentalness DOUBLE
+    ,song_liveness DOUBLE
+    ,song_valence DOUBLE
+    ,song_tempo DOUBLE
+    ,PRIMARY KEY(song_id)
+    ,INDEX (id_track)
+); 
+
+CREATE TABLE F_SPOTIFY(
+    fact_id INTEGER NOT NULL AUTO_INCREMENT
+    ,song_id INTEGER NOT NULL
+    ,key_id INTEGER NOT NULL
+    ,explicit_id INTEGER NOT NULL
+    ,mode_id INTEGER NOT NULL
+    ,time_signature_id INTEGER NOT NULL
+    ,artist_id INTEGER NOT NULL
+    ,song_popularity_id INTEGER NOT NULL
+    ,artist_popularity_id INTEGER NOT NULL
+    ,artist_genre_id INTEGER NOT NULL
+    ,year_id INTEGER NOT NULL
+    ,PRIMARY KEY(fact_id)
+);
