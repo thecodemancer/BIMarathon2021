@@ -76,7 +76,7 @@ End user of the app.
   <img src="Data Modeling/Spotify - Logical Data Model.png?raw=true?raw=true" style="width:100%">
 </p>
 <p align="center" style="background-color:rgb(41, 65, 171); ">
-  <img src="Data Modeling/Spotify - Physical Data Model.png?raw=true?raw=true" style="width:100%">
+  <img src="Data Modeling/Spotify-Physical Data Model.png?raw=true?raw=true" style="width:100%">
 </p>
 
 ## About the Processes
