@@ -37,7 +37,7 @@ End user of the app.
 * What is the artist with the fewest followers for each song?
 * What is the average number of artist followers on a song?
 
-### By gender
+### By genre
 * What is the most popular artist for each genre?
 * What is the least popular artist for each genre?
 * What is the average popularity of artists in a genre?
