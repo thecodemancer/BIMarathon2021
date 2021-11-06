@@ -29,7 +29,7 @@ End user of the app.
 * What is the genre with the most songs
 * What is the oldest song and what artist was it by?
 
-### By song
+### By Song
 * What is the most popular artist for each song?
 * What is the least popular artist for each song?
 * What is the average popularity of the artists on a song?
@@ -37,7 +37,7 @@ End user of the app.
 * What is the artist with the fewest followers for each song?
 * What is the average number of artist followers on a song?
 
-### By genre
+### By Genre
 * What is the most popular artist for each genre?
 * What is the least popular artist for each genre?
 * What is the average popularity of artists in a genre?
@@ -49,7 +49,7 @@ End user of the app.
 * What is the most popular song by genre
 * What is the least popular song by genre
 
-## 🚀 Data Model (dimensions and facts)
+## 🚀 Data Model (Dimensions and Facts)
 
 ### Dimensions:
 
