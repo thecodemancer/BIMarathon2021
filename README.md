@@ -83,11 +83,11 @@ End user of the app.
 
 We run a Python script and then with the data loaded in the database we run some transformation queries.
 
-### 🛠 ETL Process
+### 🛠 Data Pipeline Process
 
 First, because the dataset has characters of different types such as Chinese, Cyrillic, Hebrew, etc. We converted the columns names into a utf-8 encoded version of the string. The process is described in *<a href="/ETL/load_file.ipynb">/ETL/load_file.ipynb</a>*
 
-### 🛠 ELT Process
+### 🛠 Database Process
 
 In the database, we have the following staging tables
 
