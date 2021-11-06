@@ -85,7 +85,7 @@ We run a Python script and then with the data loaded in the database we run some
 
 ### 🛠 ETL Process
 
-First, because the dataset has characters of different types such as Chinese, Cyrillic, Hebrew, etc. We convert the columns name, artists, artist 1, artist 2, ... into a utf-8 encoded version of the string. The process is described in */ETL/load_file.ipynb*
+First, because the dataset has characters of different types such as Chinese, Cyrillic, Hebrew, etc. We converted the columns names into a utf-8 encoded version of the string. The process is described in *<a href="/ETL/load_file.ipynb">/ETL/load_file.ipynb</a>*
 
 ### 🛠 ELT Process
 
