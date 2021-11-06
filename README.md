@@ -96,7 +96,7 @@ temp_table_2
 tamp_table_3
 tamp_table_4
 
-Which must be populated one after the other. Sequentially. The details of the transformations can be seen in <a href="/ELT/temp_table_2.sql">/ELT/temp_table_2.sql</a>, <a href="/ELT/temp_table_3.sql">/ELT/temp_table_3.sql</a>, and <a href="/ELT/temp_table_4.sql">/ELT/temp_table_4.sql</a>
+Which must be populated one after the other. Sequentially. The details of the transformations can be seen in <a href="/ELT/temp_table_2.sql">/ELT/temp_table_2.sql</a>, <a href="/ELT/temp_table_3_1.sql">/ELT/temp_table_3_1.sql</a>, <a href="/ELT/temp_table_3_2.sql">/ELT/temp_table_3_2.sql</a>, <a href="/ELT/temp_table_3_3.sql">/ELT/temp_table_3_3.sql</a>, <a href="/ELT/temp_table_3_4.sql">/ELT/temp_table_3_4.sql</a>, and <a href="/ELT/temp_table_4.sql">/ELT/temp_table_4.sql</a>
 
 ## 📊 Data Visualization
 
