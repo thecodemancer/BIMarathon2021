@@ -18,7 +18,7 @@ SELECT DISTINCT
     END AS key_description
 FROM temp_table_4 AS BASE
 
-INSERT INTO formal-shell-295407.test_dataset.D_EXPLICIT (explicit_id, explicit_description)
+INSERT INTO D_EXPLICIT (explicit_id, explicit_description)
 SELECT DISTINCT 
     COALESCE(BASE.explicit, -1)
     ,CASE COALESCE(BASE.explicit, -1) -- Use COALESCE here to ensure consistent input
@@ -26,4 +26,14 @@ SELECT DISTINCT
         WHEN 1 THEN "Explicit"
         ELSE "No description"
     END
-FROM `formal-shell-295407.test_dataset.temp_table_4` AS BASE
+FROM temp_table_4 AS BASE
+
+INSERT INTO D_MODE (mode_id, mode_description)
+SELECT DISTINCT 
+    COALESCE(BASE.mode, -1)
+    ,CASE COALESCE(BASE.mode, -1) -- Use COALESCE here to ensure consistent input
+        WHEN 0 THEN "Minor"
+        WHEN 1 THEN "Major"
+        ELSE "No description"
+    END
+FROM temp_table_4 AS BASE
