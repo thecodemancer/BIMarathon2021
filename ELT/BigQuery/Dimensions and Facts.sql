@@ -17,3 +17,13 @@ SELECT DISTINCT
         ELSE "No description" -- Change this to a STRING
     END AS key_description
 FROM temp_table_4 AS BASE
+
+INSERT INTO formal-shell-295407.test_dataset.D_EXPLICIT (explicit_id, explicit_description)
+SELECT DISTINCT 
+    COALESCE(BASE.explicit, -1)
+    ,CASE COALESCE(BASE.explicit, -1) -- Use COALESCE here to ensure consistent input
+        WHEN 0 THEN "No explicit"
+        WHEN 1 THEN "Explicit"
+        ELSE "No description"
+    END
+FROM `formal-shell-295407.test_dataset.temp_table_4` AS BASE
