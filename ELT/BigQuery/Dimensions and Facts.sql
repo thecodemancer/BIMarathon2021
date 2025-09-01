@@ -37,3 +37,16 @@ SELECT DISTINCT
         ELSE "No description"
     END
 FROM temp_table_4 AS BASE
+
+INSERT INTO D_TIME_SIGNATURE (time_signature_id, time_signature_description)
+SELECT DISTINCT 
+    COALESCE(BASE.time_signature, -1)
+    ,CASE COALESCE(BASE.time_signature, -1) -- Use COALESCE here to ensure consistent input
+        WHEN 0 THEN "3/4"
+        WHEN 1 THEN "4/4"
+        WHEN 2 THEN "5/4"
+        WHEN 3 THEN "6/4"
+        WHEN 4 THEN "7/4"
+        ELSE "No description"
+    END
+FROM temp_table_4 AS BASE
